@@ -19,6 +19,8 @@ This project is built using modern React practices, Redux for state management, 
   
 ## Installation
 
+NVM Version: 20.15.0
+
 To install and run the Admin Dashboard locally, follow these steps:
 
 1. **Clone the repository:**
@@ -33,6 +35,7 @@ To install and run the Admin Dashboard locally, follow these steps:
     npm install
     
 Visit `http://localhost:3000` in your browser to view the application.
+
 
 ## Access the Application
 
