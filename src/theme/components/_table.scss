@@ -1,0 +1,15 @@
+.table {
+    @apply z-0 border-collapse w-full text-inactive dark:text-white mb-6 lining-nums tabular-nums;
+
+    .th {
+        @apply font-bold uppercase tracking-wider text-start ps-2 py-3 text-xs text-th  cursor-pointer;
+
+        .title {
+            @apply flex items-center justify-between text-icon min-[960px]:text-xs min-[320px]:text-[10px];
+        }
+    }
+
+    .td {
+        @apply text-start px-2 py-4 text-primary dark:text-white text-sm font-bold min-[320px]:text-sm;
+    }
+}

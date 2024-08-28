@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import './components/layout';
+@import './components/nav';
+@import './components/input';
+@import './components/main';
+@import './components/table';
+@import './components/modal';
+
+@layer utilities {
+  .flex-wrap-unset {
+    flex-wrap: unset;
+  }
+}
+
+
+body {
+    @apply font-sans text-body bg-background dark:bg-[#0b1437] overflow-x-hidden;
+}
+
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.5s forwards;
+}
+
+.slide-out-left {
+  animation: slide-out-left 0.5s forwards;
+}

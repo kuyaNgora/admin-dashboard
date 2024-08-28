@@ -1,0 +1,59 @@
+.nav-wrapper {
+    @apply flex flex-row items-center justify-center py-[5px] ps-[10px]  ;
+
+    > * {
+        @apply me-[18px] text-inactive dark:text-white;
+    }
+
+    .nav-label {
+        @apply me-auto text-base ;
+    }
+
+    .indicator {
+        @apply h-9 w-1 rounded-[5px] bg-transparent me-0;
+    }
+
+    &.active {
+        svg {
+            @apply fill-secondary dark:fill-white;
+        }
+        .nav-label {
+            @apply text-primary dark:text-white font-semibold;
+        }
+        .indicator {
+            @apply bg-secondary;
+        }
+    }
+}
+
+.breadcrumb {
+    @apply flex flex-row gap-2;
+
+    > * {
+        @apply capitalize text-sm dark:text-white;
+    }
+
+   .link {
+        @apply hover:underline;
+   }
+}
+
+.drawer-wrapper {
+    @apply fixed flex top-0 left-0 h-full w-full z-50 transform ;
+
+    &.drawer-open {
+        @apply slide-in-left;
+    }
+
+    &.drawer-close {
+        @apply slide-out-left;
+    }
+
+    .drawer-container {
+        @apply p-0 pt-2 pb-0 overflow-auto w-[385px] bg-white dark:bg-primaryDark dark:border-r dark:border-white;
+
+        .drawer-content-container {
+            @apply flex flex-col h-full pt-6 p-4 rounded-[30px] w-full;
+        }
+    }
+}

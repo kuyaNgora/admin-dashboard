@@ -1,0 +1,23 @@
+.search-container {
+    @apply w-full flex relative mb-[unset] me-[10px];
+
+    .input-container {
+        @apply relative w-full min-w-full outline-none outline-offset-2 appearance-none font-medium rounded-[30px] text-sm ps-12 pe-4 h-10 border-none py-[11px] bg-background dark:bg-primaryDark text-input dark:text-white;
+    }
+
+    .icon-container {
+        @apply absolute left-0 w-[2.5rem] h-[2.5rem] text-base flex items-center content-center top-0 z-[2]  ;
+
+        .btn-container {
+            @apply inline-flex appearance-none items-center content-center select-none relative whitespace-nowrap align-middle outline-none w-auto rounded-[inherit] font-semibold box-border h-[2.5rem] min-w-[2.5rem] px-4 bg-inherit p-0;
+
+            .icon {
+                @apply w-[20px] h-[20px] inline-block flex-shrink-0 text-body dark:text-white align-middle;
+            }
+        }
+    }
+}
+
+input[type="text"], input[type="number"]{
+    @apply dark:!bg-primaryDark
+}
