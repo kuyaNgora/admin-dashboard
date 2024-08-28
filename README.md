@@ -38,7 +38,7 @@ Visit `http://localhost:3000` in your browser to view the application.
 
 You can access the hosted website through the following link:
 
-- [Hosted Website](https://vercel.com/kuyangoras-projects/admin-dashboard/BGbA2y7tpKKUJ7x1YpRk7BmRt4MD)
+- [Hosted Website](https://admin-dashboard-ten-beta-53.vercel.app/data-tables)
 
 
 
